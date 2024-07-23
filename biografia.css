@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffffe5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 30px;
+    animation: slideIn 1.5s ease-out;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: zoomIn 1s ease-in-out;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    animation: fadeIn 3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+address {
+    text-align: center;
+    font-style: normal;
+    margin-top: 50px;
+    animation: fadeIn 3.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+header {
+    text-align: center;
+    background-color: #a0cdfd;
+    color: white;
+    padding: 20px;
+    animation: slideDown 1s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a0cdfd;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: slideUp 1s ease-in-out;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.contact a:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
